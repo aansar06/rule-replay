@@ -145,7 +145,7 @@ export default function FalseStartAnimation() {
       ))}
 
       {/* Penalty flag */}
-      <g className="fs-flag-group" transform="translate(540, 330)">
+      <g className="fs-flag-group" transform="translate(620, 350)">
         <rect x="-2" y="-4" width="4" height="20" fill="#888" rx="1" />
         <g className="fs-flag-cloth">
           <polygon points="2,-4 30,-10 28,8 2,4" fill="#fdd835" />
