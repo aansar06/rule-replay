@@ -79,6 +79,16 @@ export default function OffsideAnimation() {
         </g>
       ))}
 
+      {/* QB behind center */}
+      <g transform="translate(310, 130)">
+        <circle cx="0" cy="0" r="18" fill="#1565c0" />
+        <circle cx="0" cy="-4" r="10" fill="#ffcc80" />
+        <path d="M-10,-6 Q-10,-14 0,-15 Q10,-14 10,-6" fill="#1565c0" />
+        <text x="0" y="5" textAnchor="middle" fill="#fff" fontSize="10" fontWeight="700" fontFamily="sans-serif">
+          QB
+        </text>
+      </g>
+
       {/* Ball at center */}
       <ellipse cx="380" cy="130" rx="10" ry="6" fill="#795548" />
 
