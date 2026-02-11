@@ -22,7 +22,7 @@ export default function RuleLessonPage() {
         &larr; Back
       </Link>
       <h1 className="lesson__title">{rule.title}</h1>
-      <VideoPlaceholder title={rule.title} />
+      <VideoPlaceholder ruleId={rule.id} title={rule.title} />
       <p className="lesson__explanation">{rule.explanation}</p>
       <div className="lesson__progress">
         <span>Best: {bestScore}/2</span>
