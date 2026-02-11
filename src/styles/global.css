@@ -193,7 +193,16 @@ body {
   font-weight: 500;
 }
 
-/* ===== Video Placeholder ===== */
+/* ===== Rule Animation ===== */
+
+.rule-animation {
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #4caf50;
+}
+
+/* ===== Video Placeholder (fallback) ===== */
 
 .video-placeholder {
   aspect-ratio: 16 / 9;
