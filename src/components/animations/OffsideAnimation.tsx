@@ -65,12 +65,7 @@ export default function OffsideAnimation() {
         </text>
       </g>
 
-      {/* Whistle burst */}
-      <g className="whistle-burst" transform="translate(400, 200)">
-        <text x="0" y="0" textAnchor="middle" fill="#fdd835" fontSize="28" fontWeight="700" fontFamily="sans-serif">
-          TWEET!
-        </text>
-      </g>
+      
 
       {/* Offensive players (left side - blue) */}
       {[130, 190, 250, 310].map((y, i) => (
