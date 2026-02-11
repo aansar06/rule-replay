@@ -31,6 +31,9 @@ export default function HoldingAnimation() {
           65% { transform: translate(0, 0); opacity: 1; }
           100% { transform: translate(0, 0); opacity: 1; }
         }
+                .flag-group {
+          animation: flag-drop 2.5s ease-out forwards;
+        }
         @keyframes flag-wave {
           65%, 100% { transform: rotate(0deg); }
           75% { transform: rotate(8deg); }
