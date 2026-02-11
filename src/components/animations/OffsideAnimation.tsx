@@ -112,14 +112,16 @@ export default function OffsideAnimation() {
       </g>
 
       {/* Penalty flag */}
-      <g className="offside-flag-group" transform="translate(620, 350)">
-        <rect x="-2" y="-4" width="4" height="20" fill="#888" rx="1" />
-        <g className="offside-flag-cloth">
-          <polygon points="2,-4 30,-10 28,8 2,4" fill="#fdd835" />
+      <g transform="translate(620, 350)">
+        <g className="offside-flag-group">
+          <rect x="-2" y="-4" width="4" height="20" fill="#888" rx="1" />
+          <g className="offside-flag-cloth">
+            <polygon points="2,-4 30,-10 28,8 2,4" fill="#fdd835" />
+          </g>
+          <text x="14" y="35" textAnchor="middle" fill="#fff" fontSize="13" fontWeight="600" fontFamily="sans-serif" opacity="0.9">
+            FLAG!
+          </text>
         </g>
-        <text x="14" y="35" textAnchor="middle" fill="#fff" fontSize="13" fontWeight="600" fontFamily="sans-serif" opacity="0.9">
-          FLAG!
-        </text>
       </g>
 
       {/* Caption */}
