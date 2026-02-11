@@ -115,15 +115,27 @@ export default function HoldingAnimation() {
         </g>
       </g>
 
-      {/* Penalty flag */}
-      <g className="flag-group" transform="translate(40, 60)">
-        <rect x="-2" y="-4" width="4" height="20" fill="#888" rx="1" />
-        <g className="flag-cloth">
-          <polygon points="2,-4 30,-10 28,8 2,4" fill="#fdd835" />
+     {/* Penalty flag (position wrapper) */}
+      <g transform="translate(40, 60)">
+        {/* Animated inner group (only moves relative to wrapper) */}
+        <g className="fs-flag-group">
+          <rect x="-2" y="-4" width="4" height="20" fill="#888" rx="1" />
+          <g className="fs-flag-cloth">
+            <polygon points="2,-4 30,-10 28,8 2,4" fill="#fdd835" />
+          </g>
+          <text
+            x="14"
+            y="35"
+            textAnchor="middle"
+            fill="#fff"
+            fontSize="13"
+            fontWeight="600"
+            fontFamily="sans-serif"
+            opacity="0.9"
+          >
+            FLAG!
+          </text>
         </g>
-        <text x="14" y="35" textAnchor="middle" fill="#fff" fontSize="13" fontWeight="600" fontFamily="sans-serif" opacity="0.9">
-          FLAG!
-        </text>
       </g>
 
       {/* Caption */}
