@@ -48,7 +48,11 @@ src/
   components/
     AppHeader.tsx             Header bar with app title and home link
     RuleCard.tsx              Card component for the home page rule listing
-    VideoPlaceholder.tsx      Placeholder for animation/video area
+    VideoPlaceholder.tsx      Routes to the correct animation component
+    animations/
+      HoldingAnimation.tsx    SVG animation for Holding penalty
+      OffsideAnimation.tsx    SVG animation for Offside penalty
+      FalseStartAnimation.tsx SVG animation for False Start penalty
   pages/
     HomePage.tsx              Home screen – lists 3 rules with progress
     RuleLessonPage.tsx        Lesson screen – video placeholder + explanation
@@ -80,9 +84,9 @@ src/
 
 ## Notes / Assumptions
 
-- **Video placeholder**: No real videos are included. The lesson page renders a styled placeholder box with a play icon and "Animation here" label. This area is designed to be replaced with actual video/animation content.
+- **Animations**: Each rule has a custom inline SVG animation (CSS keyframes) that visually demonstrates the penalty. A generic placeholder is shown as a fallback for any rule without a dedicated animation component.
 - **No backend**: All data is hardcoded in `src/data/rules.ts`.
-- **No tests framework**: Manual testing is used (see checklist below).
+- **No test framework**: Manual testing is used (see checklist below).
 
 ## Manual Test Checklist
 
