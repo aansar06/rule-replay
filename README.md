@@ -124,3 +124,7 @@ src/
 - [ ] Expected: "Rule not found" with a button to Home.
 - [ ] Go to `/rules/bad-id/quiz`
 - [ ] Expected: Same behavior.
+
+## Design & Scalability
+
+The application is data-driven: all rule content, explanations, and quiz questions live in a single `src/data/rules.ts` file, so adding a new rule requires only appending an object to that array and creating a matching animation component. This same pattern extends to supporting entirely new sports—a `sport` field on the `Rule` interface and a top-level route like `/sports/:sportId/rules/:ruleId` would organize content without restructuring existing code. The `useProgress` hook stores scores keyed by rule ID, so it scales automatically as rules are added with no changes needed. For a production system, the hardcoded data file would be replaced by an API, localStorage would give way to authenticated user profiles with a backend database, and the animation components could be swapped for video or Lottie assets loaded from a CDN. The modular architecture—separated data, hooks, pages, and components—means each of these upgrades can happen independently without rewriting the rest of the application.
